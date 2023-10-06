@@ -1,0 +1,207 @@
+#home {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#name,
+#profession {
+  font-size: calc(2vw + 22px);
+}
+
+#wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 150% 150%;
+  transform: rotate(25deg);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#mystory {
+  text-align: justify;
+}
+
+#about {
+  position: absolute;
+
+  left: 0px;
+  right: 0px;
+}
+
+#techstack {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+#techstack #icons img:hover {
+  cursor: pointer;
+  scale: 1.5;
+}
+
+#deploys {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+#deploys .sites {
+  position: relative;
+}
+
+#deploys .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}
+
+#deploys .icons .text {
+  text-align: right;
+}
+
+#deploys .sites:hover .img-fluid {
+  filter: blur(5px);
+}
+
+#deploys .sites:hover .icons {
+  display: block;
+}
+
+#deploys .icons:hover {
+  display: block;
+}
+
+#github {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+#footer {
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+@media screen and (min-width: 992px) {
+  #home {
+    margin-top: 15vh;
+  }
+  #about {
+    top: 950px;
+  }
+  #techstack {
+    top: 1700px;
+  }
+  #deploys {
+    top: 2400px;
+  }
+  #github {
+    top: 3200px;
+  }
+  #footer {
+    top: 3850px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #about {
+    top: 950px;
+  }
+  #techstack {
+    top: 1700px;
+  }
+  #deploys {
+    top: 2400px;
+  }
+  #github {
+    top: 3200px;
+  }
+  #footer {
+    top: 3450px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #about {
+    top: 850px;
+  }
+  #techstack {
+    top: 2000px;
+  }
+  #deploys {
+    top: 2540px;
+  }
+  #github {
+    top: 5150px;
+  }
+  #footer {
+    top: 5380px;
+  }
+}
+
+@media screen and (max-width: 576px) and (min-width: 400px) {
+  #about {
+    top: 700px;
+  }
+  #techstack {
+    top: 2050px;
+  }
+  #deploys {
+    top: 2700px;
+  }
+  #github {
+    top: 5450px;
+  }
+  #footer {
+    top: 5650px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about {
+    top: 750px;
+  }
+  #techstack {
+    top: 2500px;
+  }
+  #deploys {
+    top: 2950px;
+  }
+  #github {
+    top: 4850px;
+  }
+  #footer {
+    top: 5100px;
+  }
+}

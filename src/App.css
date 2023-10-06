@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  /* background-color: #282c34; */
+
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
