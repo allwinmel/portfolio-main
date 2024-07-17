@@ -83,7 +83,7 @@ function Home() {
                   variant="extended"
                   onClick={() =>
                     openWindow(
-                      "https://www.canva.com/design/DAFwZlTEiW4/bc463ltl-e2fKBblwgkIRA/edit?utm_content=DAFwZlTEiW4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                      "https://drive.google.com/file/d/1ebIBV9XcMZjX2sC9EDWgQdoGesCTcY3l/view?usp=drive_link"
                     )
                   }
                 >

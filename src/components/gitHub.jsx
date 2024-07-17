@@ -21,7 +21,9 @@ function GitHub() {
           blockMargin={6}
           fontSize={18}
           theme={colourTheme}
-          style={{fontWeight: "bolder",color:'whitesmoke',position: "relative", float: "right", bottom:"-50px"}}
+          style={{fontWeight: "bolder",color:'whitesmoke',position: "relative", float: "left", bottom:"-40px",
+            left: "150px",
+          }}
         />
          </div>
       
